@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskTracker</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="nav">
+        <h1>TaskTracker</h1>
+    </header>
+    <div class="container">
+        <form class="add-task">
+            <div class="add-task-header">Add task details</div>
+            
+            <div class="task-details"> 
+                <label name="title" for="title" >Title</label>
+                <input id="title" placeholder="enter title" type="text"><br>
+
+                <label for="startDate" name="startdate">Start Date</label>
+                <input id="startDate" type="date" placeholder=" " min="today">
+
+                <label name="dueDate" for="dueDate">Due Date</label>
+                <input id="dueDate" type="date" placeholder="dd-mm-yyyy"><br>
+
+                <label name="importance" for="importance"> Set Priority</label>
+                <input id="importance" type="number" placeholder="1-10" min="0" max="10"><br>
+
+                <label name = "effort" for="effort">effort(hours)</label>
+                <input id="effort" type="number" placeholder="0" min="0" ><br>
+
+                <label for="description" name="description"> Description</label>
+                <input type="textarea" id="description" >
+
+            </div><hr>
+            <div class="json-task-details">
+                <div> For Bulk input — paste here JSON array</div>
+                <label for="json-task" name="json-task"> Json Format: {
+                    title: "title",
+                    startDate: "",
+                    dueDate: "",
+                    effort: " ",
+                    importance: "",
+                    description: ""}</label><br>
+                <textarea type="textarea" id="json-task" rows="2" colm="10" placeholder="json text..."></textarea>
+
+            </div>
+            <button type="submit"  id="addTask">Add Task</button>
+            <button type="submit"  >Analyze Task</button>
+
+        </form>
+        
+
+    </div>
+    
+    
+    <script src="index.js"></script>
+    
+</body>
+</html>
