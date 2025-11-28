@@ -23,9 +23,19 @@
     align-items: center;
     justify-content: center;
 }
-.add-task{
-    height:35vw ;
+.showTasks{
+    height:40vw ;
     width: 30vw;
+    margin-left:2vw;
+    background-color:#AEDEFC;
+    padding: 0.8vw;
+    font-size: 1vw;
+
+}
+.add-task{
+    height:40vw ;
+    width: 30vw;
+    margin-top:2vw;
     background-color: #AEDEFC;
     padding: 0.8vw;
     font-size: 1vw;
@@ -60,7 +70,7 @@
     align-items: center;
     font-size:1vw;
     color:white;
-    margin-top:0.2vw;
+    margin-top:0.8vw;
     margin-left:1vw;
     align-self: center;
 }
@@ -89,9 +99,43 @@
     scroll-behavior: smooth;
     
 }
+#description{
+    margin-top:0.1vw;
+    max-width: 25vw;
+    max-height: 2vw;
+    min-width: 25vw;
+    min-height: 2vw;
+    padding:0.3vw;
+    border-style: none;
+}
 
 .task-item{
+    left:2vw;
+    margin:0.3vw;
+    text-align: center;
     height: 2vw;
     background-color: green;
-    width: 5vw;
+    width: 28vw;
+}
+.task-box{
+    margin: 15px;
+    padding: 7px;
+    height: 6vw;
+    border-radius:10px;
+    width:27vw;
+    display:flex;
+    box-shadow:5px 5px 5px  #95d1f7;
+    border-left:1px solid #81caf8;
+    border-top: 1px solid #81caf8;
+
+
+}
+
+.task-title{
+    height: inherit;
+    width: 40%;
+    color:black;
+    font-weight: 10px;
+    font-size: 18px;
+    padding: 3px;
 }
