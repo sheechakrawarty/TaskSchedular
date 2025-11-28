@@ -22,7 +22,7 @@
                 <input id="startDate" type="date" placeholder=" " min="today">
 
                 <label name="dueDate" for="dueDate">Due Date</label>
-                <input id="dueDate" type="date" placeholder="dd-mm-yyyy"><br>
+                <input id="dueDate" type="date" placeholder="dd-mm-yyyy" ><br>
 
                 <label name="importance" for="importance"> Set Priority</label>
                 <input id="importance" type="number" placeholder="1-10" min="0" max="10"><br>
@@ -30,29 +30,33 @@
                 <label name = "effort" for="effort">effort(hours)</label>
                 <input id="effort" type="number" placeholder="0" min="0" ><br>
 
-                <label for="description" name="description"> Description</label>
-                <input type="textarea" id="description" >
-
+                <label for="description" name="description"> Description</label><br>
+                <textarea id="description" rows="5" placeholder="add description..."></textarea>
+                <button type="submit"  id="addTask">Add Task</button>
             </div><hr>
             <div class="json-task-details">
-                <div> For Bulk input — paste here JSON array</div>
+                <div> For Bulk input, paste here JSON array</div>
                 <label for="json-task" name="json-task"> Json Format: {
-                    title: "title",
-                    startDate: "",
-                    dueDate: "",
-                    effort: " ",
-                    importance: "",
-                    description: ""}</label><br>
+                    "title": " ",
+                    "startDate": "",
+                    "dueDate": "",
+                    "effort": " ",
+                    "importance": "",
+                    "description": ""}</label><br>
                 <textarea type="textarea" id="json-task" rows="2" colm="10" placeholder="json text..."></textarea>
 
             </div>
-            <button type="submit"  id="addTask">Add Task</button>
-            <button type="submit"  >Analyze Task</button>
+            <button type="submit"  id="addTaskJson">Add Task</button>
+            <button type="submit" id="AnalyzeTasks" >Analyze Task</button>
+
+             <div id="added"></div>
 
         </form>
-        
+       
+        <div class="showTasks" id="tasks"></div>
 
     </div>
+    
     
     
     <script src="index.js"></script>
